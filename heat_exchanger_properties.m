@@ -1,15 +1,15 @@
 %https://uk.mathworks.com/help/hydro/ug/modeling-heat-exchangers.html
 
 % Radiator specs
-radiator_L = 0.6; % [m]
+radiator_L = 0.3; % [m]
 radiator_W = 0.05; % [m]
-radiator_H = 0.5; % [m]
-tubes_N = 22;
-tube_H = 0.0015; % [m]
+radiator_H = 0.2; % [m]
+tubes_N = 23;
+tube_H = 0.002; % [m]
 fin_spacing = 0.002; % [m]
 wall_thickness = 1e-4; % [m]
 wall_conductivity = 240; % [W/(m*K)]
-liquid_pipe_D = 0.01; % [m]
+liquid_pipe_D = 0.0215; % [m]
 
 % Derived specs
 tube_H_internal = tube_H - 2*wall_thickness; % [m]
