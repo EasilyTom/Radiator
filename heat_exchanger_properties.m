@@ -13,6 +13,7 @@ wall_thickness = 1e-4; % [m]
 wall_conductivity = 400; % [W/(m*K)]
 liquid_pipe_D = 0.01; % [m]
 
+
 % % Radiator specs
 % % https://www.mishimoto.co.uk/yamaha-yfz350-banshee-aluminium-radiator-87-06.html
 % radiator_L = 0.304; % [m]
@@ -50,17 +51,5 @@ liquid_pipe_A = pi * liquid_pipe_D^2 / 4; % [m^2]
 
 % Other values
 component_start_temp = 35; % [degC]
-% 
-% coeffs = Simulink.Parameter;
-% coeffs.Value = [-4.1874738305272504E-27 1.0441207052012313E-22 -1.0515838796622882E-18 ...
-%                5.4773684554889017E-15 -1.571089680457229E-11 2.4105596763382539E-8 ...
-%                -1.6914328862345285E-5 0.021452216508469291 -0.77253102108807559 ...
-%                ];
-% coeffs.Complexity = 'real';
-% coeffs.HasCoderInfo = false;
-% coeffs.Description = '';
-% coeffs.DataType = 'auto';
-% coeffs.Min = [];
-% coeffs.Max = [];
-% coeffs.DocUnits = '';
 load('cont_power_coeffs.mat');
+
